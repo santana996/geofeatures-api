@@ -31,7 +31,7 @@ module Geofeatures
     end
 
     def save_record(record, geometry)
-      geofeature = GeoFeature.where(external_id: feature['ids']).first_or_initialize
+      geofeature = GeoFeature.where(external_id: record['ids']).first_or_initialize
       geofeature.title = record['title']
       geofeature.external_url = record['url']
       geofeature.magnitude = record['mag']
