@@ -1,0 +1,42 @@
+# == Schema Information
+#
+# Table name: geo_features
+#
+#  id                  :bigint           not null, primary key
+#  coordinate_latitude :float
+#  coordinate_longitud :float
+#  external_url        :string
+#  mag_type            :string
+#  magnitude           :float
+#  place               :string
+#  time                :bigint
+#  title               :string
+#  tsunami             :boolean
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#  external_id         :string
+#
+
+one:
+  external_id: MyString
+  magnitude: 1.5
+  place: MyString
+  time: 
+  tsunami: false
+  mag_type: MyString
+  title: MyString
+  coordinate_longitud: 1.5
+  coordinate_latitude: 1.5
+  external_url: MyString
+
+two:
+  external_id: MyString
+  magnitude: 1.5
+  place: MyString
+  time: 
+  tsunami: false
+  mag_type: MyString
+  title: MyString
+  coordinate_longitud: 1.5
+  coordinate_latitude: 1.5
+  external_url: MyString
